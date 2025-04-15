@@ -6,7 +6,7 @@ import fs from 'fs';
 import cron from 'node-cron';
 
 // Cargar credenciales
-const serviceAccount = JSON.parse(fs.readFileSync('./firebase-adminsdk.json', 'utf8'));
+const serviceAccount = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON);
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
