@@ -1,0 +1,8 @@
+# Ignora el archivo de credenciales de Firebase
+firebase-adminsdk.json
+
+# Node modules
+node_modules/
+
+# Archivos de log
+*.log
